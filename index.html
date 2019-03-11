@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ajax</title>
+</head>
+<body>
+    <div class="page-loaded"></div>
+    <h2>here is EUR to USD course!</h2>
+    <div><span class="currency-container"></span><button class="update-currency">update</button></div>
+    <h2>here is EUR to UAH course!</h2>
+    <div><span class="currency-containerUAH"></span><button class="update-currencyUAH">update</button></div>
+    <section>
+        <div class="page-loaded"></div>
+        <h1>ajax get html</h1>
+        <div class="html-container"></div>
+        <button class="ajax-get-html">get html</button>
+    </section>
+    <section>
+        <h1>ajax get json</h1>
+        <div>
+            <p>client name : <span class="client-name"></span></p>
+            <p>client balance : <span class="client-balance"></span></p>
+        </div>
+        <button class="ajax-get-json">get json</button>
+    </section><br/>
+    <div class="form-feedback">
+        <h1>Send your feedback</h1>
+  <form>
+    <textarea rows="10" cols="40">
+        
+    </textarea></br>
+    <input class="raz" type="submit" value="save" onchange="localStorage.setItem('server', this.value);">
+    <input class="load" type="button" value="load">
+    <button class="sendfeed" method="POST">send</button>
+  </form>  
+    </div> 
+    
+<script src="index.js"></script>
+</body>
+</html>
